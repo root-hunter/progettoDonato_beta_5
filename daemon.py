@@ -166,7 +166,8 @@ class Daemon(object):
 from main import main
 class MyDaemon(Daemon):
     def run(self):
-        main()
+        while True:
+            main()
 #----------------------------------------------------------------------------------------------------
 # the main section
 if __name__ == "__main__":
